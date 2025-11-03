@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Client.Resolution
 {
+    //获取显示器支持的分辨率
     internal static class DisplayResolutions
     {
         internal static List<eSupportedResolution> DisplaySupportedResolutions = new List<eSupportedResolution>();

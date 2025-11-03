@@ -3,6 +3,7 @@ using System.Diagnostics;
 
 namespace Client.Utils
 {
+    
     public class BrowserHelper
     {
         private static void OpenChrometBrowser(string url)

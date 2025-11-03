@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Client.Resolution
 {
+    //分辨率相关
     public enum eSupportedResolution
     {
         w1024h768 = 1024,

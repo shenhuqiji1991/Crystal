@@ -1,17 +1,31 @@
 ﻿using Client.MirGraphics;
 using Client.MirSounds;
 
+/*
+ * 这是一个数量输入对话框类，用于游戏中需要玩家输入数量的场景（如物品拆分、交易等）
+ * 
+ * 
+ * */
 namespace Client.MirControls
 {
+    //
     public sealed class MirAmountBox : MirImageControl
     {
+        // 标题和文本标签
         public MirLabel TitleLabel, TextLabel;
+        // 操作按钮
         public MirButton OKButton, CancelButton, CloseButton;
+        // 输入文本框
         public MirTextBox InputTextBox;
+        // 物品图片
         public MirControl ItemImage;
+        // 物品图片索引
         public int ImageIndex;
+        // 当前数量.最小数量.最大数量
         public uint Amount, MinAmount, MaxAmount;
 
+
+        // 创建完整的数量输入对话框
         public MirAmountBox(string title, int image, uint max, uint min = 0, uint defaultAmount = 0)
         {
             ImageIndex = image;
@@ -93,6 +107,9 @@ namespace Client.MirControls
             InputTextBox.TextBox.SelectionLength = InputTextBox.Text.Length;
 
         }
+
+
+        // 创建简单的数量输入对话框
         public MirAmountBox(string title, int image, string message)
         {
             ImageIndex = image;
@@ -169,6 +186,7 @@ namespace Client.MirControls
             CancelButton.Click += (o, e) => Dispose();
         }
 
+        // 文本框内容变化事件处理
         void TextBox_TextChanged(object sender, EventArgs e)
         {
             if (uint.TryParse(InputTextBox.Text, out Amount) && Amount >= MinAmount)
@@ -193,6 +211,7 @@ namespace Client.MirControls
             }
         }
 
+        // 文本框按键事件处理
         void MirInputBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar)

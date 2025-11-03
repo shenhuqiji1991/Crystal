@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Client.Utils
-{
+{   
+    
     public class Download
     {
         public FileInformation Info;

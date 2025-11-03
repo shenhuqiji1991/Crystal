@@ -2,6 +2,7 @@
 
 namespace Client.MirControls
 {
+    // 按钮控件类，继承自 MirImageControl
     public class MirButton : MirImageControl
     {
         #region Font Colour

@@ -1,7 +1,9 @@
 ﻿using Client.MirControls;
 
+
 namespace Client.MirObjects
 {
+    // 伤害值类
     public class Damage
     {
         public string Text;

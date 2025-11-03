@@ -4,6 +4,7 @@ using Client.MirSounds;
 
 namespace Client.MirObjects
 {
+    // 特效类，表示游戏中的各种视觉效果
     public class Effect
     {
         public MLibrary Library;

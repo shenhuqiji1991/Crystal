@@ -1,7 +1,9 @@
 ﻿namespace Client.MirControls
-{
+{   
+    // 带有动画效果的按钮类，继承自 MirButton
     public class MirAnimatedButton : MirButton
     {
+
         public static List<MirAnimatedButton> Animations = new List<MirAnimatedButton>();
 
         #region Animated
@@ -146,6 +148,7 @@
 
         #endregion
 
+        // 重写 Index 属性以实现动画效果
         public override int Index
         {
             get

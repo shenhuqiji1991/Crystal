@@ -5,7 +5,8 @@ using System.Runtime.CompilerServices;
 using Client.Resolution;
 
 namespace Client
-{
+{   
+    
     internal static class Program
     {
         public static CMain Form;

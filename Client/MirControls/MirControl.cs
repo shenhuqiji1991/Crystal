@@ -4,7 +4,8 @@ using SlimDX;
 using SlimDX.Direct3D9;
 
 namespace Client.MirControls
-{
+{   
+    // 基础控件类，所有控件均继承自此类
     public class MirControl : IDisposable
     {
         public static MirControl ActiveControl, MouseControl;

@@ -3,6 +3,7 @@ using System;
 
 namespace Client.MirSounds.Libraries
 {
+    // 缓存的声音类，用于存储音频数据和相关信息
     class CachedSound
     {
         public int Index { get; private set; }

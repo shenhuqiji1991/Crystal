@@ -7,6 +7,7 @@ using C = ClientPackets;
 using S = ServerPackets;
 namespace Client.MirScenes
 {
+    // 角色选择场景类
     public class SelectScene : MirScene
     {
         public MirImageControl Background, Title;

@@ -5,6 +5,7 @@ using S = ServerPackets;
 
 namespace Client.MirObjects
 {
+    // 法术对象类，表示游戏中的法术效果
     class SpellObject : MapObject
     {
         public override ObjectType Race

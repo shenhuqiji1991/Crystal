@@ -24,6 +24,7 @@ public enum WeatherSetting : ushort
     FireyLeaves = 256,
     PurpleLeaves = 512,
 }
+
 public enum PanelType : byte
 {
     Buy,

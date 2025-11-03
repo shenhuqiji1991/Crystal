@@ -1,5 +1,6 @@
 ﻿namespace Client.MirControls
-{
+{   
+    // 带有动画效果的控件类，继承自 MirImageControl
     public class MirAnimatedControl : MirImageControl
     {
         public static List<MirAnimatedControl> Animations = new List<MirAnimatedControl>();

@@ -2,6 +2,7 @@
 
 namespace Client.MirControls
 {
+    // 下拉框控件类，继承自 MirControl
     public class MirDropDownBox : MirControl
     {
         private MirLabel _label;

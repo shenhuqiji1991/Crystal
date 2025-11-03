@@ -5,7 +5,8 @@ using Client.MirSounds;
 using C = ClientPackets;
 
 namespace Client.MirControls
-{
+{   
+    // 游戏商店单元格类
     public sealed class GameShopCell : MirImageControl
     {
         public MirLabel nameLabel, typeLabel, goldLabel, gpLabel, stockLabel, StockLabel, countLabel;

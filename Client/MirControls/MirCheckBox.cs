@@ -2,6 +2,7 @@
 
 namespace Client.MirControls
 {
+    // 复选框控件类，继承自 MirButton
     public class MirCheckBox : MirButton
     {
 
